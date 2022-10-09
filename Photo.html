@@ -1,0 +1,43 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>
+                Personal Web Site
+            </title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <table>
+                <td>
+                    <header>
+                        <div class="user">
+                            <img src="images.jpg">
+                            <h2>Gihani Anjalika</h2>
+                            <p><b>Student</b></p>
+                        </div>
+                        <nav class="navbar">
+                            <ul type ="none">
+                                <li><a href="Home page.html">HOME</a></li>
+                                <li><a href="About.html">ABOUT</a></li>
+                                <li><a href="Education.html">EDUCATION</a></li>
+                                <li><a href="Photo.html">PHOTO</a></li>
+                                <li><a href="contacts page.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </td>
+                <td>
+                    <h3 style="color: rgb(221, 170, 17);">Show Images</h3>
+                    <img src="img1.png" id="image" class="image">
+                    <script type="text/javascript">
+                        let image=document.getElementById('image');
+                        let images=['img1.png','img2.jpg','img3.jpg','img4.jpg','img5.jpg','img6.jpg']
+                        setInterval(function(){
+                            let random=Math.floor(Math.random()*6);
+                            image.src=images[random];
+                        },1000);
+                    </script>
+                </td>
+            </table>
+        </body>
+    </html>
